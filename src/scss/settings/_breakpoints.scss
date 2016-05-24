@@ -1,0 +1,37 @@
+// =================================================
+//
+// Breakpoints
+//
+// =================================================
+
+
+// ====================================
+// Set Breakpoints
+// ====================================
+
+$small  : 330px;
+$medium : 660px;
+$large  : 1000px;
+
+
+// ====================================
+// Media Query Mixin
+// ====================================
+
+@mixin media($breakpoint) {
+	@if $breakpoint == 'small' {
+		@media (min-width: $small) { @content; }
+	}
+
+	@else if $breakpoint == 'medium' {
+		@media (min-width: $medium) { @content; }
+	}
+
+	@else if $breakpoint == 'large' {
+		@media (min-width: $large) { @content; }
+	}
+
+	@else {
+		@warn "Media mixin supports only these values: small, medium, large";
+	}
+}

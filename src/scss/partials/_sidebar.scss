@@ -1,0 +1,106 @@
+// =================================================
+//
+// Sidebar
+//
+// =================================================
+
+.sidebar {
+	position: relative;
+	z-index: 10;
+	background-color: $sidebar-bg;
+	sidebar-color: $sidebar-color;
+	@include selfclear;
+
+	@include media(medium) {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 250px;
+		height: 100%;
+	}
+
+	@include media(large) {
+		width: 350px;
+	}
+}
+
+
+// ====================================
+// Sidebar - Profile
+//
+// Includes the profile image and the
+// area right below with the name and
+// links to email and social networks.
+// ====================================
+
+.sidebar-profile {
+	background-color: $sidebar-profile-bg;
+	color: $sidebar-color;
+
+	.profile-image {
+		img {
+			display: block;
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+
+	.profile {
+		padding: 15px 0 15px 25px;
+		margin-bottom: 0;
+
+		.name {
+			display: none;
+			margin-bottom: 5px;
+
+			@include media(medium) {
+				display: block;
+			}
+		}
+
+		a {
+			font-size: 0.9rem;
+			line-height: 1.5rem;
+			color: $sidebar-color;
+		}
+	}
+}
+
+
+// ====================================
+//  Sidebar - Nav
+// ====================================
+
+.sidebar-nav {
+	// hide the sidebar navigation when on the small viewport
+	display: none;
+	// show the sidebar nav when we get to the medium breakpoint
+	@include media(medium) {
+		display: block;
+	}
+
+	ul {
+		margin : 0;
+	}
+
+	li {
+		border-bottom: 1px solid $nav-border-color;
+		margin: 0;
+	}
+
+	.sidebar-link {
+		position: relative;
+		z-index: 1;
+		display: block;
+		padding: 12px 0 12px 25px;
+		background: $nav-link-bg;
+		color: $nav-link-color;
+		transition: background-color 0.3s ease-in-out, padding 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+
+		.no-touch &:hover {
+			background-color: $nav-link-bg-hover;
+			color: $nav-link-color-hover;
+			padding-left: 30px;
+		}
+	}
+}

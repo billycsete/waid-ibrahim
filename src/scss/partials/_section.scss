@@ -1,0 +1,41 @@
+// =================================================
+//
+// Section
+//
+// =================================================
+
+.section {
+	padding: 40px 25px;
+	background-color: $section-bg;
+
+	@include media(medium) {
+		padding: 70px 50px;
+	}
+
+	@include media(large) {
+		padding: 70px;
+	}
+
+	.section-content {
+		// This element's only purpose is to limit the width of the
+		// content inside a section, but still let the section
+		// background span the whole width of the page
+		max-width: 900px;
+	}
+
+	h1, h2 {
+		position: relative;
+		z-index: 1;
+		margin-left: -25px;
+
+		@include media(medium) {
+			margin-left: 0px;
+		}
+	}
+}
+
+
+// Alternate colored sections
+.alt-bg-section {
+	background-color: $section-bg-alt;
+}

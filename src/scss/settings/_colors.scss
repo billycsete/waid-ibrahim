@@ -1,0 +1,75 @@
+// =================================================
+//
+// Colors
+//
+// =================================================
+
+$red             : #de2411;
+$orange          : #f89229;
+$blue            : #3cbae1;
+$darker-blue     : #2aa7ce;
+$black           : #222222;
+$light-grey      : #f1f1f1;
+$grey            : #515761;
+$darker-grey     : #494d55;
+$dark-grey       : #3e434b;
+$white           : #ffffff;
+
+
+// ====================================
+// Elements
+// ====================================
+
+// sections
+$section-bg           : $white;
+$section-bg-alt       : $light-grey;
+
+// sidebar
+$sidebar-bg           : $grey;
+$sidebar-color        : $white;
+$sidebar-profile-bg   : $dark-grey;
+
+// nav
+$nav-bg               : $grey;
+$nav-bg-alt           : $grey;
+
+// nav links
+$nav-link-bg          : $grey;
+$nav-link-color       : $white;
+$nav-link-bg-hover    : $darker-grey ;
+$nav-link-color-hover : $white;
+$nav-border-color     : $darker-grey;
+
+// callout
+$callout-bg           : rgba(225,225,225, 0.4);
+$callout-color        : $grey;
+$callout-border-color : $blue;
+
+
+// ====================================
+// Typography
+// ====================================
+
+// default body copy color
+$body-copy-color  : $grey;
+
+// h1
+$h1-color         : $white;
+$h1-bg-color      : $blue;
+
+// h2
+$h2-color         : $white;
+$h2-bg-color      : $orange;
+$h2-bg-color-alt  : $grey;
+
+// h3
+$h3-color         : $grey;
+
+// h4
+$h4-color         : $grey;
+
+// inline links
+$a-color          : $darker-blue;
+$a-bg-color       : transparent;
+$a-color-hover    : $blue;
+$a-bg-color-hover : $blue;

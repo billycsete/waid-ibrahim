@@ -1,0 +1,199 @@
+// =================================================
+//
+// Typography
+//
+// =================================================
+
+
+// ====================================
+// Weights
+// ====================================
+
+$light  : 300;
+$normal : 400;
+$bold   : 700;
+
+
+// ====================================
+// Body
+// ====================================
+
+html, body {
+	color: $body-copy-color;
+	font-size: 16px;
+	font-family: 'proxima-nova', 'Helvetica', 'sans-serif';
+	font-weight: $light;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+
+	@include media(large) {
+		font-size: 18px;
+	}
+}
+
+
+// ====================================
+// Headlines
+// ====================================
+
+h1 {
+	font-weight: $normal;
+	font-size: 2rem;
+	margin: 0 0 3rem 0;
+
+	span {
+		color: $h1-color;
+		background-color: $h1-bg-color;
+		display: inline-block;
+		padding: 12px 25px;
+	}
+
+	&.no-margin-bottom {
+		margin-bottom: 0.5rem;
+	}
+}
+
+h2 {
+	font-weight: $normal;
+	font-size: 1.2rem;
+	margin: 0 0 2rem 0;
+
+	@include media(medium) {
+		margin-bottom: 3rem;
+	}
+
+	span {
+		color: $h2-color;
+		background-color: $h2-bg-color;
+		display: inline-block;
+		padding: 6px 25px;
+	}
+
+	// option to have an alternate color h2
+	&.alt-color span {
+		background-color: $h2-bg-color-alt;
+	}
+
+	&.no-margin-bottom {
+		margin-bottom: 0.5rem;
+	}
+}
+
+h3 {
+	color: $h3-color;
+	font-weight: $bold;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	margin: 0 0 0.75rem 0;
+
+	&.no-margin-bottom {
+		margin-bottom: 0;
+	}
+}
+
+h4 {
+	color: $h4-color;
+	font-weight: $light;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	margin: 0 0 0.75rem 0;
+
+	&.no-margin-bottom {
+		margin-bottom: 0;
+	}
+}
+
+
+// ====================================
+// Paragraphs
+// ====================================
+
+p {
+	font-weight: $normal;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	margin: 0 0 1rem 0;
+
+	&.intro-paragraph {
+		font-size: 1.15rem;
+		line-height: 1.7rem;
+	}
+
+	&.no-margin-bottom {
+		margin-bottom: 0;
+	}
+}
+
+
+// ====================================
+// Lists
+// ====================================
+
+ol, ul {
+	margin: 0 0 2.5rem 0;
+	padding: 0;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	list-style-type: none;
+
+	li {
+		margin: 0 0 0.25rem 0;
+	}
+
+	li.stroke-below {
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 2.5rem;
+		margin-bottom: 2.5rem;
+	}
+	li.stroke-above {
+		border-top: 1px solid #ccc;
+		padding-top: 2.5em;
+		margin-top: 2.5rem;
+	}
+
+	li.space-below {
+		margin-bottom: 0.5rem;
+	}
+	li.space-above {
+		margin-bottom: 0.5rem;
+	}
+
+	&.no-margin-bottom {
+		margin-bottom: 0;
+	}
+}
+
+ul.bullets {
+	list-style-type: disc;
+	padding-left: 1.2rem;
+
+	li {
+		margin: 0 0 0.5rem 0;
+	}
+
+	&.no-margin-bottom {
+		margin-bottom: 0;
+	}
+}
+
+
+// ====================================
+// Links
+// ====================================
+
+a {
+	text-decoration: none;
+
+	&.inline-link {
+		text-decoration: underline;
+		// background-color: $a-bg-color;
+		color: $a-color;
+		padding: 0.1rem;
+		line-height: 1.4rem;
+		&:hover {
+			// background-color: $a-bg-color-hover;
+			color: $a-color-hover;
+			text-decoration: none;
+		}
+	}
+}
