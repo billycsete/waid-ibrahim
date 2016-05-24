@@ -1617,11 +1617,15 @@ a.inline-link:hover {
   color: #515761;
   background-color: rgba(225, 225, 225, 0.4);
   border-left: 4px solid #3cbae1;
-  padding: 18px 0 18px 20px;
-  margin-bottom: 2.5rem;
+  padding: 18px 0 16px 20px;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
 }
 .callout.no-margin-bottom {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+.callout h3 {
+  margin-bottom: 0.4rem;
 }
 .callout h4 {
   margin-bottom: 0;

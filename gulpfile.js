@@ -6,10 +6,8 @@ var autoprefixer = require('gulp-autoprefixer');
 var minifycss    = require('gulp-minify-css');
 var jshint       = require('gulp-jshint');
 var uglify       = require('gulp-uglify');
-var imagemin     = require('gulp-imagemin');
 var rename       = require('gulp-rename');
 var concat       = require('gulp-concat');
-var cache        = require('gulp-cache');
 var livereload   = require('gulp-livereload');
 var browserify   = require('browserify');
 var del          = require('del');
@@ -54,17 +52,10 @@ gulp.task('scripts', function () {
 });
 
 
-// Images
-gulp.task('images', function() {
-	return gulp.src('src/images/**/*')
-		.pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-		.pipe(gulp.dest('dist/images/'))
-});
-
-
 // Copy HTML and font files
 gulp.task('copy', function() {
 	gulp.src('src/*.html').pipe(gulp.dest('dist/'));
+	gulp.src('src/images/**/*').pipe(gulp.dest('dist/images/'));
 	gulp.src('src/fonts/**').pipe(gulp.dest('dist/fonts/'));
 });
 
@@ -77,7 +68,7 @@ gulp.task('clean', function(cb) {
 
 // Default task
 gulp.task('default', ['clean'], function() {
-	gulp.start('styles', 'jshint', 'scripts', 'images', 'copy');
+	gulp.start('styles', 'jshint', 'scripts', 'copy');
 	notifier.notify({ title: 'Burp!', message: 'that was a big gulp, brah.' });
 });
 
@@ -89,7 +80,7 @@ gulp.task('watch', function() {
 	// Watch .js files
 	gulp.watch('src/js/**/*.js', ['jshint', 'scripts']);
 	// Watch image files
-	gulp.watch('src/images/**/*', ['images']);
+	gulp.watch('src/images/**/*', ['copy']);
 	// Watch .html files
 	gulp.watch('src/*.html', ['copy']);
 	// Create LiveReload server
