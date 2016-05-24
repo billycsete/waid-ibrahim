@@ -5,15 +5,22 @@
 // =================================================
 
 $red             : #de2411;
-$orange          : #f89229;
-$blue            : #3cbae1;
-$darker-blue     : #2aa7ce;
+$orange          : #023474;
+$blue            : #c90002;
+$darker-blue     : #c90002;
 $black           : #222222;
 $light-grey      : #f1f1f1;
 $grey            : #515761;
 $darker-grey     : #494d55;
 $dark-grey       : #3e434b;
 $white           : #ffffff;
+
+
+$gold: #9c824a;
+$dark-gold: #8c733e;
+// gold 9c824a
+// blue 023474
+
 
 
 // ====================================
@@ -30,20 +37,20 @@ $sidebar-color        : $white;
 $sidebar-profile-bg   : $dark-grey;
 
 // nav
-$nav-bg               : $grey;
-$nav-bg-alt           : $grey;
+$nav-bg               : $gold;
+$nav-bg-alt           : $dark-gold;;
 
 // nav links
 $nav-link-bg          : $grey;
 $nav-link-color       : $white;
-$nav-link-bg-hover    : $darker-grey ;
+$nav-link-bg-hover    : $dark-gold;
 $nav-link-color-hover : $white;
 $nav-border-color     : $darker-grey;
 
 // callout
 $callout-bg           : rgba(225,225,225, 0.4);
 $callout-color        : $grey;
-$callout-border-color : $blue;
+$callout-border-color : $gold;
 
 
 // ====================================
@@ -60,7 +67,7 @@ $h1-bg-color      : $blue;
 // h2
 $h2-color         : $white;
 $h2-bg-color      : $orange;
-$h2-bg-color-alt  : $grey;
+$h2-bg-color-alt  : $gold;
 
 // h3
 $h3-color         : $grey;
