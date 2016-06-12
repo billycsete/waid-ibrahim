@@ -4,23 +4,23 @@
 //
 // =================================================
 
-$red             : #de2411;
-$orange          : #023474;
-$blue            : #c90002;
-$darker-blue     : #c90002;
-$black           : #222222;
-$light-grey      : #f1f1f1;
-$grey            : #515761;
-$darker-grey     : #494d55;
-$dark-grey       : #3e434b;
+$red             : #e74c3c;
+$darker-red      : #c44741;
+
+$blue-dark       : #0f3d48;
+$blue            : #3498db;
+$blue-light      : #366774;
+
+$black           : #2c343b;
+
+$grey            : #233140;
+$grey-dark       : #1D2A36;
+$grey-light      : #293b4c;
+
+$off-white       : #ecf0f1;
 $white           : #ffffff;
 
-
-$gold: #9c824a;
-$dark-gold: #8c733e;
-// gold 9c824a
-// blue 023474
-
+$tan             : #e5e1d1;
 
 
 // ====================================
@@ -29,28 +29,28 @@ $dark-gold: #8c733e;
 
 // sections
 $section-bg           : $white;
-$section-bg-alt       : $light-grey;
+$section-bg-alt       : $off-white;
 
 // sidebar
 $sidebar-bg           : $grey;
 $sidebar-color        : $white;
-$sidebar-profile-bg   : $dark-grey;
+$sidebar-profile-bg   : $grey-dark;
 
 // nav
-$nav-bg               : $gold;
-$nav-bg-alt           : $dark-gold;;
+$nav-bg               : blue;
+$nav-bg-alt           : blue;
 
 // nav links
 $nav-link-bg          : $grey;
 $nav-link-color       : $white;
-$nav-link-bg-hover    : $dark-gold;
+$nav-link-bg-hover    : $grey-light;
 $nav-link-color-hover : $white;
-$nav-border-color     : $darker-grey;
+$nav-border-color     : $grey-light;
 
 // callout
 $callout-bg           : rgba(225,225,225, 0.4);
 $callout-color        : $grey;
-$callout-border-color : $gold;
+$callout-border-color : $red;
 
 
 // ====================================
@@ -62,12 +62,12 @@ $body-copy-color  : $grey;
 
 // h1
 $h1-color         : $white;
-$h1-bg-color      : $blue;
+$h1-bg-color      : $red;
 
 // h2
 $h2-color         : $white;
-$h2-bg-color      : $orange;
-$h2-bg-color-alt  : $gold;
+$h2-bg-color      : $blue;
+$h2-bg-color-alt  : $blue;
 
 // h3
 $h3-color         : $grey;
@@ -76,7 +76,7 @@ $h3-color         : $grey;
 $h4-color         : $grey;
 
 // inline links
-$a-color          : $darker-blue;
+$a-color          : $blue;
 $a-bg-color       : transparent;
 $a-color-hover    : $blue;
 $a-bg-color-hover : $blue;
